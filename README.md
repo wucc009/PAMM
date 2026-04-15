@@ -4,7 +4,8 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-green.svg)](https://www.python.org/)
 [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-AbMAP-orange)](https://huggingface.co/wcc009/AbMAP)
 
-**AbMAP** is a bioinformatics tool fine-tuned on the **AntiBERTa2** architecture, specifically designed to classify antibody sequences based on their maturation status. It accurately distinguishes between **Naive** antibodies and **Mature** antibodies—the latter representing antibodies that have undergone the **Affinity Maturation** process. AbMAP provides a robust computational approach for large-scale immune repertoire analysis and antibody screening.
+**AbMAP** is a bioinformatics tool fine-tuned on the **AntiBERTa2** architecture, specifically designed to classify antibody sequences based on their maturation status. It accurately distinguishes between **Naive** antibodies and **Mature** antibodies—the latter representing antibodies that have undergone the **Affinity Maturation** process. AbMAP provides a robust computational approach for large-scale immune repertoire analysis and antibody screening.  
+
 ![Graphical abstract](Graphical abstract.png)
 ---
 
