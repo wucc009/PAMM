@@ -1,10 +1,10 @@
-# AbMAP: Antibody Mature-Attribute Predictor 🧬
+# AbMAP: antibody maturation predictor 🧬
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-green.svg)](https://www.python.org/)
 [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-AbMAP-orange)](https://huggingface.co/wcc009/AbMAP)
 
-**AbMAP** is a bioinformatics tool fine-tuned on the **AntiBERTa2** architecture, specifically designed to classify antibody sequences based on their maturation status. It accurately distinguishes between **Naive** antibodies and **Mature** antibodies—the latter representing antibodies that have undergone the **Affinity Maturation** process. AbMAP provides a robust computational approach for large-scale immune repertoire analysis and antibody screening.  
+**AbMAP (antibody maturation predictor)** is a deep-learning framework fine-tuned on the AntiBERTa2 protein language model using a Weight-Decomposed Low-Rank Adaptation (DoRA) strategy. Specifically trained on paired heavy–light (H–L) chain sequences from human naive and memory B cells, it captures the evolutionary patterns of antibody maturation to **accurately distinguish mature from naive H–L pairings**. AbMAP demonstrates exceptional robustness and generalization capabilities independently of sequence length variations, V-gene pairing preferences, and heterogeneous immunological contexts (external validation AUC = 0.970). By effectively correlating prediction scores with antibody specificity, affinity, overall developability, and clinical discontinuation risks , **AbMAP serves as a powerful high-throughput computational tool to optimize early-stage therapeutic antibody screening and design**.
 
 ![Graphical abstract](Graphical_abstract.png)
 ---
