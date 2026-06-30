@@ -1,10 +1,10 @@
-# AbMAP: antibody maturation predictor 🧬
+# PAMM: Paired Antibody Maturation Model 🧬
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-green.svg)](https://www.python.org/)
-[![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-AbMAP-orange)](https://huggingface.co/wcc009/AbMAP)
+[![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-PAMM-orange)](https://huggingface.co/wcc009/PAMM)
 
-**AbMAP (antibody maturation predictor)** is a deep-learning framework fine-tuned on the AntiBERTa2 protein language model using a Weight-Decomposed Low-Rank Adaptation (DoRA) strategy. Specifically trained on paired heavy–light (H–L) chain sequences from human naive and memory B cells, it captures the evolutionary patterns of antibody maturation to **accurately distinguish mature from naive H–L pairings**. AbMAP demonstrates exceptional robustness and generalization capabilities independently of sequence length variations, V-gene pairing preferences, and heterogeneous immunological contexts (external validation AUC = 0.970). By effectively correlating prediction scores with antibody specificity, affinity, overall developability, and clinical discontinuation risks , **AbMAP serves as a powerful high-throughput computational tool to optimize early-stage therapeutic antibody screening and design**.
+**PAMM (Paired Antibody Maturation Model)** is a deep-learning framework fine-tuned on the AntiBERTa2 protein language model using a Weight-Decomposed Low-Rank Adaptation (DoRA) strategy. Specifically trained on paired heavy–light (H–L) chain sequences from human naive and memory B cells, it captures the evolutionary patterns of antibody maturation to **accurately distinguish mature from naive H–L pairings**. PAMM demonstrates exceptional robustness and generalization capabilities independently of sequence length variations, V-gene pairing preferences, and heterogeneous immunological contexts (external validation AUC = 0.970). By effectively correlating prediction scores with antibody specificity, affinity, overall developability, and clinical discontinuation risks , **PAMM serves as a powerful high-throughput computational tool to optimize early-stage therapeutic antibody screening and design**.
 
 ![Graphical abstract](Graphical_abstract.png)
 ---
@@ -12,7 +12,7 @@
 ## 📂 Repository Structure
 
 ```text
-AbMAP/
+PAMM/
 ├── data/                # Directory for input datasets (e.g., example.csv)
 ├── result/              # Directory for prediction outputs
 ├── environment.yml      # Conda environment configuration file
@@ -29,12 +29,12 @@ To ensure reproducibility, we recommend using a `conda` virtual environment:
 
 ```bash
 # Clone the repository
-git clone https://github.com/wucc009/AbMAP.git
-cd AbMAP
+git clone https://github.com/wucc009/PAMM.git
+cd PAMM
 
 # Create and activate a dedicated environment
 conda env create -f environment.yml
-conda activate AbMAP
+conda activate PAMM
 ```
 
 ### 2\. Input Data Requirements
@@ -59,7 +59,7 @@ Input data must be provided in **CSV format** and strictly adhere to the followi
 
 ### Model
 
-The AbMAP model is hosted on Hugging Face: [wcc009/AbMAP](https://huggingface.co/wcc009/AbMAP).
+The PAMM model is hosted on Hugging Face: [wcc009/PAMM](https://huggingface.co/wcc009/PAMM).
 
   * **Automatic Mode**: The script will automatically attempt to download the model from Hugging Face upon first execution.
   * **Manual Mode**: If the automatic download fails, please download the model manually and place it in the `./model/` directory.
