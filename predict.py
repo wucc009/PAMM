@@ -11,7 +11,7 @@ import torch
 import pandas as pd
 import numpy as np
 
-MODEL_NAME = "wcc009/AbMAP"
+MODEL_NAME = "wcc009/PAMM"
 DEFAULT_MAX_LENGTH = 250
 BATCH_SIZE = 32
 
@@ -109,7 +109,7 @@ def validate_input(df):
     print(f"✅  Validation passed: {len(df)} valid sequences")
     return df
 
-class AbMAP:
+class PAMM:
     def __init__(self, model_path):
         from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
@@ -162,7 +162,7 @@ def format_output(df, results):
 
 def main():
     parser = argparse.ArgumentParser(
-        description='AbMAP (Antibody Maturation Predictor)',
+        description='PAMM (Paired Antibody Maturation Model)',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -208,7 +208,7 @@ Input file format:
     df['VH_seq'] = df['VH_seq'].apply(lambda seq: ' '.join(list(seq)))
     df['VL_seq'] = df['VL_seq'].apply(lambda seq: ' '.join(list(seq)))
     
-    predictor = AbMAP(model_path=model_path)
+    predictor = PAMM(model_path=model_path)
 
     print(f"🔬 Starting prediction...")
     vh_seqs = df['VH_seq'].tolist()
