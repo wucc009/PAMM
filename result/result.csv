@@ -1,0 +1,11 @@
+ID,Prediction,PAMM Score
+Naive1,Naive,0.002409
+Naive2,Naive,0.000518
+Naive3,Naive,0.001715
+Naive4,Naive,0.000177
+Naive5,Naive,0.000474
+Mature1,Mature,0.999834
+Mature2,Mature,0.999934
+Mature3,Mature,0.999616
+Mature4,Mature,0.999593
+Mature5,Mature,0.9798
