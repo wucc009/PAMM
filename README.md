@@ -80,12 +80,12 @@ After inference, the results are saved in the `./result/` directory. The output 
 
 #### Output Example (`./result/result.csv`)
 
-| ID | Prediction |
-| :--- | :--- |
-| Naive1 | Naive |
-| Naive2 | Naive |
-| ... | ... |
-| Mature5 | Mature |
+| ID | Prediction | PAMM Score |
+| :--- | :--- | :--- |
+| Naive1 | Naive | 0.002409 | 
+| Naive2 | Naive | 0.000518 |
+| ... | ... | ... |
+| Mature5 | Mature | 0.9798 |
 
 -----
 
